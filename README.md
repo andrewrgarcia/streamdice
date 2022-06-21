@@ -1,6 +1,6 @@
 # StreamDice
 
-StreamDice is a C++ program running on a unique [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the constant random shuffling of key maps with periodic random seeds. 
+StreamDice is a C++ program running on a unique [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the constant random shuffling of keyboard maps. 
 
 ### Contributing
 
