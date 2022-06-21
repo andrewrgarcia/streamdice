@@ -15,7 +15,7 @@ StreamDice welcomes contributions to the StreamDice project. An effort should be
 #### Example
 
 ##### encryption
-```ruby
+```bash
 ./streamdice 7412369 1
 enter message:
 Hello World. Hello again!
@@ -23,7 +23,7 @@ Hello World. Hello again!
 CT*lX @yKlW- 0Rl+X Bnp=Uo
 ```
 ##### decryption
-```ruby
+```bash
 ./streamdice 7412369 0
 enter message:
 CT*lX @yKlW- 0Rl+X Bnp=Uo
