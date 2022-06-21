@@ -17,7 +17,7 @@ boost::bimap<boost::bimaps::set_of<std::string>,
              boost::bimaps::set_of<int>>
 unwarped_map()
 {
-    std::string qwerty{"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm`1234567890-=~!@#$%^&*()_+[];',./{}:<>?|"};
+    std::string qwerty{"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm`1234567890-=~!@#$%^&*()_+[];',./{}:<>"};
     std::vector<int> charord;
 
     typedef boost::bimap<boost::bimaps::set_of<std::string>,
@@ -37,7 +37,7 @@ boost::bimap<boost::bimaps::set_of<int>,
              boost::bimaps::set_of<std::string>>
 map_warping(int device)
 {
-    std::string qwerty{"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm`1234567890-=~!@#$%^&*()_+[];',./{}:<>?|"};
+    std::string qwerty{"QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm`1234567890-=~!@#$%^&*()_+[];',./{}:<>"};
     std::vector<int> charord;
 
     typedef boost::bimap<boost::bimaps::set_of<int>,
@@ -109,6 +109,11 @@ void machine(std::string message, int key, bool encrypt)
         i++;
     }
 
+    if (encrypt)
+        printf("--- message encrypted! ---\n");
+    else
+        printf("--- message deciphered! ---\n");
+
     i = 0;
     for (auto k : message)
     {
@@ -122,11 +127,11 @@ void machine(std::string message, int key, bool encrypt)
 
 int main(int argc, char **argv)
 {
-    std::string message{argv[1]};
-    int key{std::stoi(argv[2])};
-    int encrypt{std::stoi(argv[3])};
+    // std::string message{argv[1]};
+    int key{std::stoi(argv[1])};
+    int encrypt{std::stoi(argv[2])};
+    std::string message;
 
-    // printf("-------- STREAMDICE --------\nA stream cipher written in C++\nAndrew Garcia, 2022\n\n");
     // printf("encrypt or decrypt?\nencrypt: 1; decrypt: 0;\n");
     // scanf("%d", &encrypt);
 
@@ -135,12 +140,11 @@ int main(int argc, char **argv)
     // else
     //     std::cout << "enter message to decrypt:" << std::endl;
 
-    // std::getline(std::cin >> std::ws, message);
     // printf("enter key:\n");
     // scanf(" %d", &key);
     //
-    // std::cout << "enter message:" << std::endl;
-    machine(message, key, encrypt);
+    std::cout << "enter message:" << std::endl;
+    std::getline(std::cin >> std::ws, message);
 
-    return 0;
+    machine(message, key, encrypt);
 }
