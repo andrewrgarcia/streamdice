@@ -6,6 +6,32 @@ StreamDice is a C++ program running on a unique [stream cipher](https://en.wikip
 
 StreamDice welcomes contributions to the StreamDice project. An effort should be made in closing security vulnerabilities while keeping the cipher algorithm stable, that is, one should make an effort to keep the ciphertext conventions constant. 
 
+### Usage
+
+#### Input Commands
+```ruby
+./streamdice [ key ] [ encrypt[1]/decrypt[0] ]
+```
+#### Example
+
+##### encryption
+```bash
+./streamdice 7412369 1
+enter message:
+Hello World!    
+--- message encrypted! ---
+CT*lX @yKlWf
+```
+##### decryption
+```bash
+./streamdice 7412369 0
+enter message:
+CT*lX @yKlWf
+--- message deciphered! ---
+Hello World!
+
+```
+
 ### Quick Start
 
 A basic installation template.
