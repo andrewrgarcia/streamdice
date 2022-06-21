@@ -15,21 +15,20 @@ StreamDice welcomes contributions to the StreamDice project. An effort should be
 #### Example
 
 ##### encryption
-```bash
+```ruby
 ./streamdice 7412369 1
 enter message:
-Hello World!    
+Hello World. Hello again!
 --- message encrypted! ---
-CT*lX @yKlWf
+CT*lX @yKlW- 0Rl+X Bnp=Uo
 ```
 ##### decryption
-```bash
+```ruby
 ./streamdice 7412369 0
 enter message:
-CT*lX @yKlWf
+CT*lX @yKlW- 0Rl+X Bnp=Uo
 --- message deciphered! ---
-Hello World!
-
+Hello World. Hello again!
 ```
 
 ### Quick Start
