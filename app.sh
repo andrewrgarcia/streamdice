@@ -11,7 +11,7 @@ encryptit(){
 	echo enter key:
 	read -s KEY
 	# echo --- message encrypted! ---
-	./streamdice.k $KEY $ENCRYPT
+	build/StreamDice $KEY $ENCRYPT
 
 }
 
@@ -22,7 +22,7 @@ decipher(){
 	echo enter key:
 	read -s KEY
     # echo --- message deciphered! ---
-	./streamdice.k  $KEY $ENCRYPT
+	build/StreamDice  $KEY $ENCRYPT
 
 }
 
