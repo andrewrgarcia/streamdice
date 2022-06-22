@@ -1,2 +1,4 @@
 *.k
 build
+main_fys.cpp
+emscripten_notes
