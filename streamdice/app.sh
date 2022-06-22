@@ -48,7 +48,7 @@ then
 	echo "./StreamDice 1 	# encryption "
 	echo "./StreamDice 0 	# deciphering"
 	echo
-	echo "(Characters not supported: \, ?, |)"
+	echo "(Characters not supported: \ ? | ")"
 
 
 elif [ $ENCRYPT == 0 ]

@@ -6,29 +6,39 @@ StreamDice is a C++ program running on a unique [stream cipher](https://en.wikip
 
 StreamDice welcomes contributions to the StreamDice project. An effort should be made in closing security vulnerabilities while keeping the cipher algorithm stable, that is, one should make an effort to keep the ciphertext conventions constant. 
 
-### Usage
+### Disclaimer: Use At Your Own Risk
+This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the MIT LICENSE, as published by Andrew Garcia. See [LICENSE](https://github.com/andrewrgarcia/streamdice/blob/main/LICENSE) for more details.
 
-#### Input Commands
-```ruby
-./streamdice [ key ] [ encrypt[1]/decrypt[0] ]
-```
-#### Example
+### Usage 
 
-##### encryption
+#### encryption
 ```bash
-./streamdice 7412369 1
+./streamdice 145 145236 1
 enter message:
-Hello World. Hello again!
+Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
 --- message encrypted! ---
-CT*lX @yKlW- 0Rl+X Bnp=Uo
+I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
 ```
-##### decryption
+#### decryption
 ```bash
-./streamdice 7412369 0
+./streamdice 145 145236 0
 enter message:
-CT*lX @yKlW- 0Rl+X Bnp=Uo
+I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
 --- message deciphered! ---
-Hello World. Hello again!
+Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
+```
+### Details
+```ruby
+// Input command format
+./streamdice [ key1 ] [ key2 ] [ encrypt[1]/decrypt[0] ]  %
+
+// Inputs
+[ key1 ]    type long;   range:   0 to 2147483647  // "keep it shorter than 10 digits"
+[ key2 ]    type long;   range:   1 to (2147483647 or < message_size)
+[ encrypt ] type int;    range:   1 or 0 (True or False)
+
+// Characters not supported:
+\  ? | "
 ```
 
 ### Quick Start

@@ -63,7 +63,7 @@ map_warping(int device)
     return umap;
 }
 
-void scribe(std::string msg_frac, int root, int spawn, bool &encrypt)
+void scribe(std::string msg_frac, long root, long spawn, bool &encrypt)
 {
 
     std::mt19937 generator(root);
@@ -92,20 +92,17 @@ void scribe(std::string msg_frac, int root, int spawn, bool &encrypt)
     }
 }
 
-void machine(std::string message, int key, bool encrypt)
+void machine(std::string message, long key1, long key2, bool encrypt)
 {
-    int root;
+    long root{key1};
     std::vector<int> sequence;
 
     int i = 0;
-    while (key > 0)
+    while (key2 > 0)
     {
-        int digit = key % 10;
-        key /= 10;
-        if (i == 0)
-            root = digit;
-        else
-            sequence.push_back(digit);
+        int digit = key2 % 10;
+        key2 /= 10;
+        sequence.push_back(digit);
         i++;
     }
 
@@ -128,8 +125,9 @@ void machine(std::string message, int key, bool encrypt)
 int main(int argc, char **argv)
 {
     // std::string message{argv[1]};
-    int key{std::stoi(argv[1])};
-    int encrypt{std::stoi(argv[2])};
+    long key{std::stol(argv[1])};
+    long key2{std::stol(argv[2])};
+    int encrypt{std::stoi(argv[3])};
     std::string message;
 
     // printf("encrypt or decrypt?\nencrypt: 1; decrypt: 0;\n");
@@ -146,5 +144,5 @@ int main(int argc, char **argv)
     std::cout << "enter message:" << std::endl;
     std::getline(std::cin >> std::ws, message);
 
-    machine(message, key, encrypt);
+    machine(message, key, key2, encrypt);
 }
