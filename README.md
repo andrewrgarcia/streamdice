@@ -9,25 +9,50 @@ StreamDice welcomes contributions to the StreamDice project. An effort should be
 ### Disclaimer: Use At Your Own Risk
 This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the MIT LICENSE, as published by Andrew Garcia. See [LICENSE](https://github.com/andrewrgarcia/streamdice/blob/main/LICENSE) for more details.
 
-### Usage 
+## Usage 
 
-#### encryption
-```bash
-./streamdice 145 145236 1
+### Silent Keys (with app.sh)
+
+Command line in *streamdice/* directory:
+
+make app.sh executable with  `chmod +x app.sh`
+
+####  Encryption
+
+``` 
+./app.sh 1  // input command
+enter key #1:
+enter key #2:
 enter message:
 Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
 --- message encrypted! ---
 I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
 ```
-#### decryption
-```bash
-./streamdice 145 145236 0
-enter message:
-I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
---- message deciphered! ---
-Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
+
+#### Decryption
+
 ```
-### Details
+./app.sh 0  // input command
+enter key #1:
+enter key #2:
+enter message:
+Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
+--- message encrypted! ---
+I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
+```
+
+### Explicit Keys (with direct ./streamdice)
+
+Command line in *streamdice/build/* directory:
+
+```bash
+./streamdice 145 145236 1        // input command for encryption
+enter message:
+
+./streamdice 145 145236 0		// input command for decryption
+enter message:
+```
+### Details 
 ```ruby
 // Input command format
 ./streamdice [ key1 ] [ key2 ] [ encrypt[1]/decrypt[0] ]  %
@@ -41,7 +66,7 @@ Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
 \  ? | "
 ```
 
-### Quick Start
+## Installation Quick Start
 
 A basic installation template.
 
