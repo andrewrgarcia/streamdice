@@ -36,9 +36,9 @@ I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
 enter key #1:
 enter key #2:
 enter message:
-Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
---- message encrypted! ---
 I4tY# 7#CYYC {2Y$S sv`yjG 1Y$BI Br nE&yW[ti ,v VI4tY#V ];~IrO.5vQ
+--- message encrypted! ---
+Hello World. Hello again! olleH (5 letters) is 'Hello' backwards.
 ```
 
 ### Explicit Keys (with direct ./streamdice)
