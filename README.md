@@ -97,7 +97,7 @@ vcpkg install boost-interprocess:x64-windows
 #### Building StreamDice
 ```bash
 git clone git@github.com:....
-cd streamdice
+cd streamdice/streamdice
 mkdir build
 cd build
 cmake ..
