@@ -67,6 +67,15 @@ enter message:
 // Characters not supported:
 \  ? | "
 ```
+### Usage password/generator.cpp
+
+**Klang it!** Install klang (https://github.com/andrewrgarcia/klang)
+
+```ruby
+cd password
+klang generator.cpp
+./generator.k
+```
 
 ## Installation Quick Start
 
