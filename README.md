@@ -6,9 +6,11 @@ A cipher is an encryption algorithm and thus, can be applied to program developm
 any language. Streamdice [a.k.a streamdice++] and streamdiceJS are the C++ and 
 web (JavaScript) implementations of this cipher, respectively. 
 
-### Contributing
+### Contributions Welcome / Hacktoberfest
 
-The streamdice project welcomes meaningful contributions. An effort should be made in closing security vulnerabilities while keeping the cipher algorithm stable, that is, one should make an effort to keep the ciphertext conventions constant. 
+Meaningful contributions to the project are always welcome. Participating in Hacktoberfest 2022. Before making a PR, please make sure to read the [CONTRIBUTING](./CONTRIBUTING.md) document.
+
+You may use the Issues section of this repository if you'd like to propose some new ideas/enhancements or report a bug.
 
 ### Disclaimer: Use At Your Own Risk
 This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the MIT LICENSE, as published by Andrew Garcia. See [LICENSE](https://github.com/andrewrgarcia/streamdice/blob/main/LICENSE) for more details.
