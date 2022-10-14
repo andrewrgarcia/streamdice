@@ -1,6 +1,8 @@
-# StreamDice
+# streamdice
 
-StreamDice is a C++ program running on a unique [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the constant random shuffling of keyboard maps. 
+streamdice is a [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the catalogued  random shuffling of keyboard hashmaps. 
+
+Ciphers are encryption algorithms and ergo can be developed as programs in multiple languages. Streamdice [also known as streamdice++] and streamdiceJS are their C++ and JavaScript implementations, respectively.
 
 ### Contributing
 
@@ -9,7 +11,22 @@ StreamDice welcomes contributions to the StreamDice project. An effort should be
 ### Disclaimer: Use At Your Own Risk
 This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the MIT LICENSE, as published by Andrew Garcia. See [LICENSE](https://github.com/andrewrgarcia/streamdice/blob/main/LICENSE) for more details.
 
-## Usage 
+## streamdiceJS usage  
+
+#### web-ready 
+
+Click on [streamdiceJS demo](https://andrewatcloud.com/streamdice/)
+
+#### npm compile
+
+```
+cd streamdiceJS
+npm run build
+```
+
+Then apply dist/main.js to web
+
+## streamdice++ usage 
 
 ### Silent Keys (with app.sh)
 
@@ -66,7 +83,7 @@ enter message:
 \  ? | "
 ```
 
-## Installation Quick Start
+## streamdice++ Installation Quick Start
 
 A basic installation template.
 

@@ -100,6 +100,7 @@ void machine(std::string message, long key1, long key2, bool encrypt)
     int i = 0;
     while (key2 > 0)
     {
+        // key2 digit chain reversed
         int digit = key2 % 10;
         key2 /= 10;
         sequence.push_back(digit);
