@@ -2,11 +2,11 @@
 
 streamdice is a [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the catalogued  random shuffling of keyboard hashmaps. 
 
-Ciphers are encryption algorithms and ergo can be developed as programs in multiple languages. Streamdice [also known as streamdice++] and streamdiceJS are their C++ and JavaScript implementations, respectively.
+StreamDice is a C++ program running on a unique [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the constant random shuffling of keyboard maps. 
 
 ### Contributing
 
-StreamDice welcomes contributions to the StreamDice project. An effort should be made in closing security vulnerabilities while keeping the cipher algorithm stable, that is, one should make an effort to keep the ciphertext conventions constant. 
+StreamDice++ welcomes contributions to the StreamDice project. An effort should be made in closing security vulnerabilities while keeping the cipher algorithm stable, that is, one should make an effort to keep the ciphertext conventions constant. 
 
 ### Disclaimer: Use At Your Own Risk
 This program is free software. It comes without any warranty, to the extent permitted by applicable law. You can redistribute it and/or modify it under the terms of the MIT LICENSE, as published by Andrew Garcia. See [LICENSE](https://github.com/andrewrgarcia/streamdice/blob/main/LICENSE) for more details.
@@ -82,6 +82,15 @@ enter message:
 // Characters not supported:
 \  ? | "
 ```
+### Usage password/generator.cpp
+
+**Klang it!** Install klang (https://github.com/andrewrgarcia/klang)
+
+```ruby
+cd password
+klang generator.cpp
+./generator.k
+```
 
 ## streamdice++ Installation Quick Start
 
@@ -111,11 +120,7 @@ vcpkg install boost-interprocess:x64-windows
 
 #### Building StreamDice
 ```bash
-git clone git@github.com:....
-cd streamdice
-mkdir build
-cd build
-cmake ..
-cmake --build .
+git clone git@github.com: ...
+cd streamdice/streamdice; mkdir build; cd build; cmake ..; cmake --build .
 ```
 

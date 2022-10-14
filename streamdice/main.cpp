@@ -1,3 +1,10 @@
+// StreamDice++
+// A message-encryption C++ program made by Andrew Garcia based
+// on a unique stream cipher also developed by Andrew, ``StreamDice'', based on the
+// constant random shuffling of keyboard character hashmaps.
+//
+// github: https://github.com/andrewrgarcia/streamdice
+// Andrew Garcia, 2022
 #include <iostream>
 #include <string>
 // #include <unordered_map>
