@@ -197,7 +197,7 @@ async function app() {
     inputAttributes: {
       'aria-label': 'Type your message here'
     },
-    showCancelButton: true
+    // showCancelButton: true
   })
 
 
@@ -210,7 +210,7 @@ async function app() {
 
 
   var newMessage = machine(message, key1, key2, encrypt);
-  document.getElementById('log').innerHTML = encr + "\n" + newMessage;
+  document.getElementById('log').innerHTML = encr + "<br><br>" + newMessage;
 
 
 }
