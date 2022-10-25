@@ -103,18 +103,24 @@ function scribe(msg_frac, root, spawn, encrypt) {
 
 function machine(message, key1, key2, encrypt) {
 
-  var root = key1;
+  const toNum = v => !!+v ? +v : v
+  var root = toNum(key1);
   var num = key2;
   var digits_str = num.toString();
   var digits = digits_str.split('');
   var sequence = digits.map(Number)
 
   var new_message = [];
-  var i = sequence.length;
+  var i = 0;
   for (let k = 0; k < message.length; k++) {
     var s = message[k]
-    new_message.push(scribe(s, root, sequence[i], encrypt));
-    i--; // iterate from last to first in `key2` ; analogous to reverse digit chain in c++
+    if (s != " "){
+      new_message.push(scribe(s, root, sequence[sequence.length - i], encrypt));
+      i++; // iterate from last to first in `key2` ; analogous to reverse digit chain in c++
+      i%=sequence.length; // take modulo for periodic repetition
+    } else {
+      new_message.push(" ");
+    }
   }
 
   return new_message.join('');
