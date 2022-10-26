@@ -1,4 +1,10 @@
+__pycache__
+
 *.k
+*_draft.cpp
+
 build
 main_fys.cpp
 emscripten_notes
+
+megadec.py
