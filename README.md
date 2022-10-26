@@ -1,9 +1,9 @@
 # streamdice
 
-streamdice is a [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on the catalogued random shuffling of keyboard hashmaps.
+A [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on catalogued shuffled keyboards. 
 
 A cipher is an encryption algorithm and thus, can be applied to program development in
-any language. [**Streamdice**](./streamdice) and [**streamdiceJS**](./streamdiceJS) are the C++ and web (JavaScript) implementations of this cipher, respectively.
+any language. Originally developed in [Python](./python) and optimized to C++ as [**streamdice**](./streamdice). The JavaScript implementation [**streamdiceJS**](./streamdiceJS) was written to integrate to websites as an [interactive application](https://andrewatcloud.com/streamdice/). 
 
 | [Read the white paper](https://github.com/andrewrgarcia/streamdice/blob/main/whitepaper.pdf) |
 | -------------------------------------------------------------------------------------------- |
@@ -25,35 +25,3 @@ This program is free software. It comes without any warranty, to the extent perm
 
 **[MIT license](./LICENSE)** Copyright 2022 © <a href="https://github.com/andrewrgarcia" target="_blank">Andrew Garcia</a>.
 
-```stl
-solid cube_corner
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 1.0 0.0 0.0
-      vertex 0.0 0.0 1.0
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 0.0 1.0 0.0
-      vertex 1.0 0.0 0.0
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 0.0 0.0 1.0
-      vertex 0.0 1.0 0.0
-    endloop
-  endfacet
-  facet normal 0.577 0.577 0.577
-    outer loop
-      vertex 1.0 0.0 0.0
-      vertex 0.0 1.0 0.0
-      vertex 0.0 0.0 1.0
-    endloop
-  endfacet
-endsolid
-```
