@@ -13,17 +13,17 @@ import argparse
 
 ap = argparse.ArgumentParser()
 
-
 ap.add_argument("-k", "--key", default = '12345',
                 type = str, help="encryption key")
 
 ap.add_argument("-m", "--message", default = 'Hello', type = str, help="message to encrypt/decrypt")
 
 
-args = vars(ap.parse_args())
+# args = vars(ap.parse_args())
+args = ap.parse_args()
 
-# print('double-check:')
-# print(decrypt(encrypt(args["message"], args["key"]), args["key"]))
+original = args.message
+encoded = encrypt(original, args.key)
+decoded = decrypt(encoded, args.key)[:len(original)]
 
-# print('\nencrypted message:')
-print(encrypt(args["message"], args["key"]))
+print(f'--- message encoded! ---\n{encoded}' if original == decoded else 'Sorry: stream-cipher does not pass decoding check! Try another message OR add a random character to your message i.e. ! # and try again') 

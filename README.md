@@ -1,6 +1,10 @@
 # streamdice
 
+![](streamdice.svg) 
+
 A [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andrew Garcia based on catalogued shuffled keyboards. 
+
+
 
 A cipher is an encryption algorithm and thus, can be applied to program development in
 any language. Originally developed in [Python](./python) and optimized to C++ as [**streamdice**](./streamdice). The JavaScript implementation [**streamdiceJS**](./streamdiceJS) was written to integrate to websites as an [interactive application](https://andrewatcloud.com/streamdice/). 
