@@ -9,10 +9,10 @@ A [stream cipher](https://en.wikipedia.org/wiki/Stream_cipher) developed by Andr
 A cipher is an encryption algorithm and thus, can be applied to program development in
 any language. Originally developed in [Python](./python) and optimized to C++ as [**streamdice**](./streamdice). The JavaScript implementation [**streamdiceJS**](./streamdiceJS) was written to integrate to websites as an [interactive application](https://andrewatcloud.com/streamdice/). 
 
-| [Read the white paper](https://andrewatcloud.com/streamdice/whitepaper.pdf) |
+| [Read the white paper](https://raw.githubusercontent.com/andrewrgarcia/streamdice/main/whitepaper.pdf) |
 | -------------------------------------------------------------------------------------------- |
 
-| [Check out the online demo](https://andrewatcloud.com/streamdice/) |
+| [Check out the online demo](https://adryangl.com/streamdice/) |
 | ------------------------------------------------------------------ |
 
 ### Contributions Welcome / Hacktoberfest
