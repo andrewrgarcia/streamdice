@@ -12,8 +12,8 @@ any language. Originally developed in [Python](./python) and optimized to C++ as
 | [Read the white paper](https://raw.githubusercontent.com/andrewrgarcia/streamdice/main/whitepaper.pdf) |
 | -------------------------------------------------------------------------------------------- |
 
-| [Check out the online demo](https://adryangl.com/streamdice/) |
-| ------------------------------------------------------------------ |
+| [Check out the online demo](https://streamdice.vercel.app/) |
+| ----------------------------------------------------------- |
 
 ### Contributions Welcome / Hacktoberfest
 
