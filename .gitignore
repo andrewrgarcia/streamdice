@@ -11,3 +11,6 @@ megadec.py
 
 docs/build
 Qwerty.svg
+
+*.aux
+*.log
