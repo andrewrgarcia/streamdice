@@ -159,7 +159,7 @@ Usage
 web-ready 
 ^^^^^^^^^^^^^^^
 
-Check out the `online demo <https://adryangl.com/streamdice/>`_
+Check out our `online demo <https://streamdice.vercel.app/>`_
 
 Local computer
 ^^^^^^^^^^^^^^^
